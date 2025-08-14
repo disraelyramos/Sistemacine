@@ -1,0 +1,167 @@
+/* Tarjeta por sala */
+.panel-sala {
+  background: #98c1d9; /* azul claro */
+  border-radius: 16px;
+  padding: 18px;
+  color: #fff;
+  min-height: 440px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.panel-sala__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.panel-sala__title {
+  font-weight: 700;
+}
+
+.panel-sala__body {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Mensaje cuando no hay funciones */
+.panel-sala__body .no-funciones {
+  text-align: center;
+  color: #fff; /* blanco */
+  font-size: 0.9rem;
+  padding: 16px 0;
+}
+
+/* Chip de hora */
+.hora-chip {
+  border: 0;
+  width: 210px;
+  margin: 0 auto;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #56ab2f, #a8e063);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.hora-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.28);
+}
+
+.hora-chip__icon {
+  font-size: 18px;
+}
+
+.hora-chip__hora {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.hora-chip__label {
+  font-size: 12px;
+  opacity: .9;
+}
+
+/* Botón flotante */
+.fab-add {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 56px;
+  height: 56px;
+  border-radius: 999px;
+  border: none;
+  font-size: 34px;
+  color: #fff;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .15s ease, box-shadow .15s ease;
+  box-shadow: 0 10px 22px rgba(0,0,0,.25);
+  z-index: 1050;
+}
+
+.fab-add:hover {
+  transform: translateY(-2px);
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, .55);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  z-index: 1055;
+}
+
+.modal-card {
+  width: 100%;
+  max-width: 720px;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,.3);
+}
+
+.modal-card__header,
+.modal-card__footer {
+  padding: 14px 16px;
+  background: #f7f7f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-card__body {
+  padding: 16px;
+}
+
+/* Layout de 2 columnas × 2 filas para inputs */
+.modal-card__body .row.g-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+/* Botones del modal juntos */
+.modal-card__footer button {
+  margin-right: 8px;
+}
+
+.btn-close {
+  background: transparent;
+  border: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+}
+
+.btn-close::before,
+.btn-close::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 8px;
+  width: 16px;
+  height: 2px;
+  background: #333;
+}
+
+.btn-close::before {
+  transform: rotate(45deg);
+}
+
+.btn-close::after {
+  transform: rotate(-45deg);
+}

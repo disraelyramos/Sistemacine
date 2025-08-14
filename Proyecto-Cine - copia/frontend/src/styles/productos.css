@@ -1,0 +1,15 @@
+.table th, .table td {
+  vertical-align: middle;
+}
+
+.card h3 {
+  font-weight: bold;
+}
+
+.card svg {
+  opacity: 0.8;
+}
+
+.table th, .table td { vertical-align: middle; }
+.card h3 { font-weight: bold; }
+.card svg { opacity: 0.85; }
