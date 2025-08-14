@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        BACKEND_DIR = 'Proyecto-Cine - copia/backend-movieflow'
-        FRONTEND_DIR = 'Proyecto-Cine - copia/frontend'
+        BACKEND_DIR = "Proyecto-Cine - copia/backend-movieflow"
+        FRONTEND_DIR = "Proyecto-Cine - copia/frontend"
     }
 
     stages {
